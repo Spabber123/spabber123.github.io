@@ -1,0 +1,57 @@
+
+# =====================================
+# ASTEROID CLIENT - WEBSITE CONFIG
+# =====================================
+
+title: "Asteroid Client"
+name: "Asteroid"
+description: >-
+  The official website for Asteroid, a Minecraft client.
+  Find project information, security notices, updates,
+  and official download information.
+
+url: "https://wwow444z.github.io"
+baseurl: "/retracfixer"
+
+# Website appearance
+theme: minima
+show_excerpts: true
+
+# Website author
+author:
+  name: "Asteroid Team"
+
+# Website links
+github_username: "wwow444z"
+
+# SEO settings
+lang: en-GB
+permalink: /:categories/:title/
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Security-focused website information
+security:
+  enabled: true
+  phishing_awareness: true
+  report_suspicious_links: true
+  verify_download_sources: true
+
+# Navigation
+header_pages:
+  - index.html
+  - security.md
+  - about.md
+
+# Exclude development files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
